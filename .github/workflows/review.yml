@@ -33,14 +33,14 @@ jobs:
           GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
           
           # 智谱API配置
-          OPENAI_KEY: ${{ secrets.ZHIPU_API_KEY }}
-          OPENAI.API_BASE: "https://open.bigmodel.cn/api/paas/v4/"
+          OPENAI_KEY: ${{ secrets.GPT_API_KEY }}
+          OPENAI.API_BASE: "https://api.chatanywhere.tech/v1"
           
           # ═══════════════════════════════════════════════════
           # 模型配置
           # ═══════════════════════════════════════════════════
-          config.model: "openai/glm-4-plus"
-          config.fallback_models: '["openai/glm-4-air"]'
+          config.model: "gpt-4o"
+          config.fallback_models: '["gpt-4o-mini", "gpt-3.5-turbo"]'
           config.custom_model_max_tokens: "128000"
           config.language: "zh"
           
